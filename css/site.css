@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #050f14;
+	color: #fff;
+	background-image: url(../img/back.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.container {
+	width: 970px;
+	margin: 0 auto;
+}
+header {
+	height: 139px;
+	background-image: url(../img/header.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+header img {
+	position: relative;
+	left: 310px;
+}
+header li {
+	display: inline;
+	list-style-image: none;
+	padding-right: 20px;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+}
+header li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px;
+	font-size: 12px;
+	text-shadow: 1px 1px px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+header li a:hover {
+	background-color: #023a51;
+	color: #fff;
+}
+@font-face {
+    font-family: 'BickhamScriptProBold';
+    src: url('../fonts/bickhamscriptpro-bold-webfont.eot');
+    src: url('../fonts/bickhamscriptpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bickhamscriptpro-bold-webfont.woff') format('woff'),
+         url('../fonts/bickhamscriptpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/bickhamscriptpro-bold-webfont.svg#BickhamScriptProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BickhamScriptProSemibold';
+    src: url('../fonts/bickhamscriptpro-semibold-webfont.eot');
+    src: url('../fonts/bickhamscriptpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bickhamscriptpro-semibold-webfont.woff') format('woff'),
+         url('../fonts/bickhamscriptpro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/bickhamscriptpro-semibold-webfont.svg#BickhamScriptProSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.main h1 {
+	font-family: "BickhamScriptProSemibold", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #fff57a;
+	text-shadow:1px 1px 2px #000000;
+	font-size: 72px;
+	margin: 0;
+	font-weight: normal;
+}
+.main { display: block; }
+.content {
+	width: 100%;
+	display: inline-table;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-image: url(../img/bluetrans.png);
+	margin-bottom: 10px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    2px 2px 5px rgba(0, 0, 0, 0.75);
+	box-shadow:         2px 2px 5px rgba(0, 0, 0, 0.75);
+	padding:35px;
+}
+.content img {
+	border:solid 1px #FFF;
+}
+.horse {
+	width: 100%;
+	display: inline-table;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-image: url(../img/bluetrans.png);
+	margin-bottom: 10px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    2px 2px 5px rgba(0, 0, 0, 0.75);
+	box-shadow:         2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+.horse-pic { float: left; width: 200px; padding-left: 30px; background-image: url(../img/picback.png); background-color: #002633; }
+.horse-text { width: 700px; float: left; padding-left: 30px; }
+.horse h2 { font-weight: normal; }
+.horsephotos{float:left;width:350px;margin-right:10px;margin-bottom:35px;}
+.horsephotos img{margin-bottom:10px;}
+a { color: #fff57a; text-decoration: none; }
+a:hover { color: #d2ca64; }
+.horse a {
+	font-size: 12px;
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	padding: 0 5px 0 8px;
+	background-position: 0;
+}
+footer {
+	background-image: url(../img/footerorn.png);
+	text-align: center;
+	padding-top: 40px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+footer li {
+	display: inline;
+	list-style-image: none;
+	margin: 0 auto;
+	font-size: 11px;
+	padding-right: 10px;
+}
+footer li a {
+	color: #FFF;
+}
+footer li a:hover {
+	color: #CCC;
+}
+.footcont,.footcont a {
+	font-size: 10px;
+	color: #CCC;
+}
+.footcont {	
+	padding-left: 550px;
+	text-align: left;
+}
+.footcont a:hover {
+	color: #999;
+}
+.home {
+	width: 100%;
+	display: inline-table;
+	background-image: url(../img/home.png);
+	height: 622px;
+	position: relative;
+	right: 80px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.home2 {
+	width: 100%;
+	display: inline-table;
+	/*background-image: url(../img/home.png);*/
+	height: 622px;
+	position: relative;
+	right: 80px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.hometext { position: relative; width: 490px; left: 600px; top: 210px; }
+.hometext h1 { font-family: "BickhamScriptProSemibold", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #fff57a;
+	text-shadow: 1px 1px 2px #000000;
+	font-size: 120px;
+	margin: 0 0 -70px;
+	position: relative;
+	right: 234px;
+	width: 600px;
+	font-weight: normal; }
+.hometext h2 { font-weight: normal;}
