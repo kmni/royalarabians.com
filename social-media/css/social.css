@@ -1,41 +1,28 @@
 /* Jamie did this as a guide, it should be customized on a site-by-site basis */
 
-#facebook p {
-    padding-right: 10px;
-    width: 678px;
-}
-#facebook .header {
-	clear: both;
-	float: left;
-	padding-right: 10px;
-	width: 100px;
-}
-#facebook li {
-    border-bottom: 1px solid #000000;
-    list-style: none outside none;
-    min-height: 110px;
-    padding: 25px 0;
-}
-#facebook_albums li {
-    float: left;
-    height: 300px;
-    list-style: none outside none;
-    padding: 0 15px;
-    width: 180px;
-}
-#facebook_albums img {
-	display: block;
-}
-#facebook_albums .header {
-	display: none;
-}
-#facebook_albums {
-	clear: both;
-	padding-left: 50px;
-}
-#facebook_albums a {
-    font-weight: bold;
-}
-.main {
+ul#facebook {list-style-type: none; padding: 0; margin: 0;}
+#facebook li {display: block; width: 100%; max-width: 464px; background: #002A38; border-radius: 3px; box-shadow: 1px 2px 2px -1px #888; padding: 0; margin-bottom: 20px;}
+#facebook li a {color: #B25432; text-decoration: underline;}
+#facebook li a:hover {text-decoration: none;}
+#facebook li .content {font: normal 14px/18px Arial; color: #3e392f; background: #fff; border-radius: 3px; padding: 4px 4px 10px 4px; margin: 0;}
+#facebook li .content p {font: normal 14px/18px Arial; color: #3e392f; padding: 6px 18px 0 6px; margin: 0;}
+#facebook li div.footer {font: bold 14px/18px Arial; color: #fff; padding: 6px 10px 8px 22px;}
+#facebook li div.footer a.author {color: #fff; text-decoration: underline; margin: 0;}
+#facebook li div.footer abbr {color: #fff; padding: 0; margin: 0;}
+#facebook li a.image {float: left; text-align: center; text-decoration: none; margin: 6px 10px 0 6px;}
+#facebook li a.image img { width: 100%; max-width: 465px;}
+#facebook li div.link {padding: 5px 18px 0 18px;}
+#facebook li div.picture {text-align: right;}
+#facebook li.loading {display: block; width: 100%; max-width: 100%; background: none; border-radius: 0; box-shadow: none; text-align: center; padding: 0; margin: 0 0 50px 0;}
+#facebook li.loading img {margin: 10px 0;}
+
+
+ul#facebook_albums {display: block; list-style-type: none; padding: 5px 0 0 0; margin: 0;}
+#facebook_albums li {display: block; float: left; width: 100%; max-width: 225px; text-align: center; background: #002A38; border-radius: 3px; box-shadow: 1px 2px 2px -1px #888; padding: 0 0 5px 0; margin-bottom: 20px;}
+#facebook_albums li span {font: bold 14px/18px Arial;}
+#facebook_albums a.album_name {font: bold 14px/18px Arial; color: #fff; text-decoration: underline;}
+#facebook_albums a.album_cover {display: block; width: 100%; text-decoration: none; background: #fff; border-radius: 3px; padding: 6px 4px; margin: 0 0 4px 0;}
+
+/*.main {
     display: table !important;
-}
+}*/

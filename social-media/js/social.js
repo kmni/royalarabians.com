@@ -6,14 +6,59 @@ Social = {
       access_token: access_token
     };
     $.getJSON(url, params, function(data) {
-      $("#facebook").html($.tmpl($("#facebook_template"), data.data));
-      $("#facebook abbr.timeago").timeago();
-      $("#facebook").autolink();
+      var $fb_news = $('#facebook');
+
+      $fb_news.html($.tmpl($("#facebook_template"), data.data));
+      // once loaded
+      $fb_news.imagesLoaded(function(){
+        //$(".fb_date").timeago();
+        $('.fb_date').each(function(){
+          var e       = $(this),
+              dateStr = e.text() ? e.text() : false;
+              if (dateStr)
+              {
+                var m_names   = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                var currDate  = new Date(),
+                    currYear  = currDate.getYear(),
+                    date      = new Date(dateStr),
+                    day       = date.getDate(),
+                    month     = date.getMonth(),
+                    year      = date.getYear();
+                e.text(m_names[month]+' '+day+''+(year < currYear ? ' '+year : ''));
+              }
+        });
+        $fb_news.autolink();
+        // initialize Masonry
+        $fb_news.masonry({
+          itemSelector: 'li',
+          'gutter':     20,
+          isFitWidth:   false,
+          singleMode:   false,
+          isAnimated:   false
+        });
+      });
     });
+
     url = "https://graph.facebook.com/" + id + "/albums/?callback=?";
     $.getJSON(url, params, function(data) {
-      return $("#facebook_albums").html($.tmpl($("#facebook_album_template"), data.data));
+
+      var $fb_albums = $('#facebook_albums');
+      $("#facebook_albums").html($.tmpl($("#facebook_album_template"), data.data));
+
+      // once loaded
+      $fb_albums.imagesLoaded(function(){
+        // initialize Masonry
+        $fb_albums.masonry({
+          itemSelector: 'li',
+          'gutter':     20,
+          isFitWidth:   false,
+          singleMode:   false,
+          isAnimated:   false
+        });
+      });
     });
+
+
   },
 
   facebookPictureURL: function(picture) {
